@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+  background-color: brown;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+}
+.child1{
+  background-color: aqua;
+  height: 50px;
+  width: 25%;
+}
+.child2{
+  background-color: azure;
+  height: 50px;
+  width: 25%;
+}
+.child3{
+  background-color: blue;
+  height: 50px;
+  width: 25%;
+}
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .example {
+        background: red;
+    }
+
+    .container{
+      flex-direction: column;
+    }
+    .child1,.child2,.child3{
+      width: 100%;
+    }
+}
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .example {
+      background: green;
+  }
+}
+  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .example {
+      background: blue;
+  }
+
+ 
+  .child1,.child2,.child3{
+    height: 90px;
+
+  }
+}
+
+
+} 
+  
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .example {
+      background: orange;
+  }
+} 
+  
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .example {
+      background: pink;
+  }
+}
